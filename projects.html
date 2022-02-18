@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+      .coll {
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: rgb(179, 39, 39);
+        margin-top: 20;
+        padding-top: 20;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <div id="main-content" class="row"></div>
+    <div id="footer-placeholder" class="footer"></div>
+    <script>
+      var projects = [
+        {
+          name: "CabOnline",
+          image: "images/cabonline.jpg",
+          description: "Cab online is a taxi booking platform",
+        },
+        {
+          name: "Cloud Mobile",
+          image: "images/cabonline.jpg",
+          description: "Cab online is a taxi booking platform",
+        },
+        {
+          name: "Cloud of Goods",
+          image: "images/cabonline.jpg",
+          description: "Cab online is a taxi booking platform",
+        },
+        {
+          name: "Fitopia",
+          image: "images/cabonline.jpg",
+          description: "Cab online is a taxi booking platform",
+        },
+        {
+          name: "Pitch venture",
+          image: "images/cabonline.jpg",
+          description: "Cab online is a taxi booking platform",
+        },
+        {
+          name: "Error reporting",
+          image: "images/cabonline.jpg",
+          description: "Cab online is a taxi booking platform",
+        },
+      ];
+
+      let mainContent = document.getElementById("main-content");
+      let row = document.createElement("div");
+      row.className = "row";
+      function asdsd() {
+        projects.forEach((element) => {
+          createCard(element);
+        });
+      }
+
+      function createCard(project) {
+        let button = document.createElement("button");
+        button.addEventListener("click", function () {
+          buttonClicked(project);
+        });
+        let column = document.createElement("div");
+        column.className = "col-sm-6";
+
+        let card = document.createElement("div");
+        card.setAttribute("style", "color:white;background-color:black");
+        card.className = "card";
+
+        let cardBody = document.createElement("div");
+        card.className = "coll card-body";
+
+        let title = document.createElement("h1");
+        title.className = "card-title";
+        var titleText = document.createTextNode(project.name);
+        title.appendChild(titleText);
+        cardBody.appendChild(title);
+
+        var img = document.createElement("img");
+        img.src = project.image;
+        img.width = 80;
+        img.height = 100;
+        img.className = "card-img-top";
+        //cardBody.appendChild(img);
+
+        let description = document.createElement("p");
+        description.className = "card-text";
+        var descriptionText = document.createTextNode(project.description);
+        description.appendChild(descriptionText);
+        cardBody.appendChild(description);
+
+        card.appendChild(cardBody);
+
+        button.appendChild(card);
+        column.appendChild(button);
+        mainContent.appendChild(column);
+      }
+      //mainContent.appendChild(row);
+
+      function buttonClicked(project) {
+        // localStorage.setItem("lastname", "Smith");
+        // console.log(localStorage.getItem("lastname"));
+        localStorage.setItem('selectedProject', JSON.stringify(project));
+        location.href = "details.html?project="+project.name;
+      }
+
+      $(function () {
+        $("#nav-placeholder").load("navbar.html");
+        $("#footer-placeholder").load("footer2.html");
+      });
+      asdsd();
+    </script>
+  </body>
+</html>

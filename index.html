@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+<div class= "bg-image home" id="home">
+    
+</div>
+<div id="footer-placeholder" class="footer">
+
+</div>
+<script>
+  function load_home() {
+     document.getElementById("home").innerHTML='<object type="text/html" data="projects.html" ></object>';
+}
+    $(function(){
+      $("#nav-placeholder").load("navbar.html");
+      $("#footer-placeholder").load("footer2.html");
+    });
+    load_home();
+    </script>
+    
+  </body>
+</html>

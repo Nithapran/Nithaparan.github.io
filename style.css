@@ -1,0 +1,63 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.contact-info {
+  padding: 10;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255,0.1);
+}
+
+.contact-info > .child {
+    color: rgb(255, 255, 255);
+}
+
+.row {
+  margin: 0 auto;
+  grid-row: 2;
+}
+
+.a {
+  color: white;
+}
+
+.social-media {
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-outline-danger.custom-btn {
+	background-color: rgb(0, 0, 0);
+	border-color: rgb(255, 255, 255);
+}
+
+.max-width {
+    max-width: 1000px;
+    /* padding: 0 80px; */
+    margin: 150px;
+  }
+
+#home {
+    color: aliceblue;
+    display: flex;
+    min-height: 100vh;
+    background: url("images/bg.jpg") no-repeat center;
+}
+
+.home .max-width {
+    width: 100%;
+    display: flex;
+  }
+
+  .home .max-width .row {
+    margin-right: 0;
+  }
+
+  .home .home-content .text-1 {
+    font-size: 27px;
+  }
