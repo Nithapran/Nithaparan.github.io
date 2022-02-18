@@ -27,46 +27,19 @@
     <div id="main-content" class="row"></div>
     <div id="footer-placeholder" class="footer"></div>
     <script>
-      var projects = [
-        {
-          name: "CabOnline",
-          image: "images/cabonline.jpg",
-          description: "Cab online is a taxi booking platform",
-        },
-        {
-          name: "Cloud Mobile",
-          image: "images/cabonline.jpg",
-          description: "Cab online is a taxi booking platform",
-        },
-        {
-          name: "Cloud of Goods",
-          image: "images/cabonline.jpg",
-          description: "Cab online is a taxi booking platform",
-        },
-        {
-          name: "Fitopia",
-          image: "images/cabonline.jpg",
-          description: "Cab online is a taxi booking platform",
-        },
-        {
-          name: "Pitch venture",
-          image: "images/cabonline.jpg",
-          description: "Cab online is a taxi booking platform",
-        },
-        {
-          name: "Error reporting",
-          image: "images/cabonline.jpg",
-          description: "Cab online is a taxi booking platform",
-        },
-      ];
 
       let mainContent = document.getElementById("main-content");
       let row = document.createElement("div");
       row.className = "row";
       function asdsd() {
-        projects.forEach((element) => {
+        $.getJSON("projects.json", function (json) {
+          json.forEach((element) => {
           createCard(element);
         });
+        });
+
+
+        
       }
 
       function createCard(project) {

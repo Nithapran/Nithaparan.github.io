@@ -1,3 +1,4 @@
+
 .footer {
   position: fixed;
   width: 100%;
@@ -62,6 +63,10 @@
     font-size: 27px;
   }
 
+  body{
+    font-family: "Audiowide", sans-serif;
+  }
+
   .project-summary {
     width: 100%;
     height: 500px;
@@ -69,11 +74,62 @@
     background-repeat: no-repeat;
   }
   
-  #project-summary h2,p {
+  #project-summary  h1,p {
+    padding-left: 14px;
     color: white;
   }
 
   #project-summary img {
     width: 200px;
     height: 64px;
+  }
+
+  #screenshots {
+    background-color: black;
+    width: 100%;
+    height: 600px;
+  }
+
+  #screenshots.scrollmenu {
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  #screenshots .screenshot {
+    width: 202px;
+    height: 450px;
+    margin: 14PX;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  #screenshots h1 {
+    color: rgb(255, 255, 255);
+    margin: 14PX;
+  }
+
+  #role {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+  }
+
+  #role h1 {
+    color: rgb(255, 255, 255);
+    padding: 14PX;
+  }
+
+  #responsibilities {
+    background-color: black;
+    width: 100%;
+    height: 750px;
+  }
+
+  #responsibilities h1,ol {
+    color: rgb(255, 255, 255);
+    padding: 14PX;
+  }
+
+  #responsibilities ol {
+    margin-left: 14px;
   }

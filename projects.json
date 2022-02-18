@@ -1,32 +1,30 @@
 [
-    {
-      "name": "CabOnline",
-      "image": "images/detail-page-bg.jpg",
-      "description": "Cab online is a taxi booking platform"
-    },
-    {
-      "name": "Cloud Mobile",
-      "image": "images/cabonline.jpg",
-      "description": "Cab online is a taxi booking platform"
-    },
-    {
-      "name": "Cloud of Goods",
-      "image": "images/cabonline.jpg",
-      "description": "Cab online is a taxi booking platform"
-    },
-    {
-      "name": "Fitopia",
-      "image": "images/cabonline.jpg",
-      "description": "Cab online is a taxi booking platform"
-    },
-    {
-      "name": "Pitch venture",
-      "image": "images/cabonline.jpg",
-      "description": "Cab online is a taxi booking platform"
-    },
-    {
-      "name": "Error reporting",
-      "image": "images/cabonline.jpg",
-      "description": "Cab online is a taxi booking platform"
-    }
+  {
+    "name": "CabOnline",
+    "image": "images/detail-page-bg.jpg",
+    "description": "Cab online is a taxi booking platform",
+    "screenShots": [
+      "images/cabonline-sc/1.jpg",
+      "images/cabonline-sc/2.jpeg",
+      "images/cabonline-sc/3.jpeg",
+      "images/cabonline-sc/4.jpeg",
+      "images/cabonline-sc/5.jpeg",
+      "images/cabonline-sc/6.jpeg",
+      "images/cabonline-sc/7.jpeg",
+      "images/cabonline-sc/8.jpeg"
+    ],
+    "role": "Developer",
+    "responsibilities":[
+      "Designing and building mobile applications for Apple’s iOS platform.",
+      "Collaborating with the design team to define app features",
+      "Ensuring quality and performance of the application to specifications.",
+      "Identifying potential problems and resolving application bottlenecks.",
+      "Fixing application bugs before the final release.",
+      "Publishing application on App Store.",
+      "Maintaining the code and atomization of the application.",
+      "Designing and implementing application updates"
+    ],
+    "appstoreLink": "https://apps.apple.com/ca/app/taxi-cabonline/id495111856",
+    "googleplayLink": null
+  }
 ]
