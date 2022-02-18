@@ -12,17 +12,16 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
-      
     />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <style>
       body {
         font-family: "Audiowide", sans-serif;
       }
     </style>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
   </head>
   <body>
     <!--Navigation bar-->
@@ -33,12 +32,14 @@
         <div style="padding: 100px">
           <h1 id="project-title"></h1>
           <p id="project-description"></p>
-          <a id="appstore-link"
-            ><img
+          <button type="button" id="appstore-link">
+            <img
               src="images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
             />
-          </a>
-          <a id="googleplay-link"><img src="images/android.png" /></a>
+          </button>
+          <button type="button" id="googleplay-link">
+            <img src="images/android.png" />
+          </button>
         </div>
       </div>
     </section>
@@ -53,6 +54,12 @@
     <section id="responsibilities">
       <h1>Responsibilities</h1>
       <ol id="responsibilities_ol"></ol>
+    </section>
+    <section id="documentation">
+      <h1>Documentation</h1>
+    </section>
+    <section id="design-scheme">
+      <h1>Design scheme</h1>
     </section>
     <div id="footer-placeholder" class="footer"></div>
     <script>
@@ -77,27 +84,31 @@
         var projecTtitle = document.getElementById("project-title");
         var projectDescription = document.getElementById("project-description");
         var role = document.getElementById("role_p");
-        var responsibilitiesList = document.getElementById("responsibilities_ol");
-        var appstoreLink = document.getElementById("appstore-link");
-        var googleplayLink = document.getElementById("googleplay-link");
+        var responsibilitiesList = document.getElementById(
+          "responsibilities_ol"
+        );
+        var appstoreButton = document.getElementById("appstore-link");
+        var googleplayButton = document.getElementById("googleplay-link");
         projectSummarySection.style.backgroundImage = `url(${project.image})`;
         projectSummarySection.style.position = "top left";
         projecTtitle.innerHTML = project.name;
         projectDescription.innerHTML = project.description;
         role.innerHTML = project.role;
-        if (project.appstoreLink == null) {
-          $("#failureModal").modal();
-        } else {
-          appstoreLink.href = project.appstoreLink;
-        }
-        if (project.googleplayLink == null) {
-         // googleplayLink.href = project.googleplayLink
-          $("#failureModal").modal("show");
-        } else {
-          googleplayLink.href = project.googleplayLink;
-        }
-        
-        
+
+        appstoreButton.addEventListener("click", function () {
+          if ((project.appstoreLink == null)) {
+            $("#myModal").modal();
+          } else {
+           window.open(project.appstoreLink, "_blank");
+          }
+        });
+        googleplayButton.addEventListener("click", function () {
+          if ((project.googleplayLink == null)) {
+            $("#myModal").modal();
+          } else {
+            window.open(project.googleplayLink, "_blank");
+          }
+        });
 
         //setup screenshot section
         var projectScreenshotSection = document.getElementById("screenshots");
@@ -109,7 +120,7 @@
         });
 
         //setup responsibilities section
-        project.responsibilities.forEach(element => {
+        project.responsibilities.forEach((element) => {
           var li = document.createElement("li");
           li.innerHTML = element;
           responsibilitiesList.appendChild(li);
@@ -124,24 +135,45 @@
       asdasd();
     </script>
     <!-- Modal -->
-<div class="modal fade" id="failureModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Link not found</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>This may due to</h4>
+      <ol id="responsibilities_ol"></ol>
+      <li>App has been removed from store</li>
+      <li>App is being developed</li>
+      <li>Server errors</li>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
   </body>
 </html>

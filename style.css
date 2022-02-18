@@ -84,6 +84,11 @@
     height: 64px;
   }
 
+  #project-summary button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0ch;
+  }
+
   #screenshots {
     background-color: black;
     width: 100%;
@@ -122,7 +127,7 @@
   #responsibilities {
     background-color: black;
     width: 100%;
-    height: 750px;
+    height: 300px;
   }
 
   #responsibilities h1,ol {
@@ -132,4 +137,26 @@
 
   #responsibilities ol {
     margin-left: 14px;
+  }
+
+  #documentation {
+    background-color: black;
+    width: 100%;
+    height: 450px;
+  }
+
+  #documentation h1,ol {
+    color: rgb(255, 255, 255);
+    padding: 14PX;
+  }
+
+  #design-scheme {
+    background-color: black;
+    width: 100%;
+    height: 450px;
+  }
+
+  #design-scheme h1,ol {
+    color: rgb(255, 255, 255);
+    padding: 14PX;
   }
