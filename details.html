@@ -60,6 +60,15 @@
     </section>
     <section id="design-scheme">
       <h1>Design scheme</h1>
+      <div class="color">
+        <h3>Palette</h3>
+        <img id="pallete-image"/>
+      </div>
+      <div class="fonts">
+        <h3>Fonts</h3>
+        <p>sdsd</p>
+      </div>
+      
     </section>
     <div id="footer-placeholder" class="footer"></div>
     <script>
@@ -89,6 +98,7 @@
         );
         var appstoreButton = document.getElementById("appstore-link");
         var googleplayButton = document.getElementById("googleplay-link");
+        var palatteImage = document.getElementById("pallete-image");
         projectSummarySection.style.backgroundImage = `url(${project.image})`;
         projectSummarySection.style.position = "top left";
         projecTtitle.innerHTML = project.name;
@@ -125,8 +135,13 @@
           li.innerHTML = element;
           responsibilitiesList.appendChild(li);
         });
+
+        //setup design Scheme
+      palatteImage.src = project.design_scheme.color;
+
       }
 
+      
       $(function () {
         $("#nav-placeholder").load("navbar.html");
         $("#footer-placeholder").load("footer2.html");

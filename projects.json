@@ -25,6 +25,41 @@
       "Designing and implementing application updates"
     ],
     "appstoreLink": "https://apps.apple.com/ca/app/taxi-cabonline/id495111856",
-    "googleplayLink": "https://play.google.com/store/apps/details?id=com.cabonline.cabonline&hl=en_CA&gl=US"
+    "googleplayLink": "https://play.google.com/store/apps/details?id=com.cabonline.cabonline&hl=en_CA&gl=US",
+    "design_schemme": {
+      "color": "images/color-palette/cabonline.png",
+      "font": "Tanseek Modern Arabic Medium"
+    },
+    "documentation":null
+  },
+  {
+    "name": "Fitopia",
+    "image": "images/detail-page-bg.jpg",
+    "description": "Fitopia is a yoga class booking system",
+    "screenShots": [
+      "images/fitopia-sc/1.jpeg",
+      "images/fitopia-sc/2.jpeg",
+      "images/fitopia-sc/3.jpeg",
+      "images/fitopia-sc/4.jpeg",
+      "images/fitopia-sc/5.jpeg"
+    ],
+    "role": "Developer",
+    "responsibilities":[
+      "Designing and building mobile applications for Apple’s iOS platform.",
+      "Collaborating with the design team to define app features",
+      "Ensuring quality and performance of the application to specifications.",
+      "Identifying potential problems and resolving application bottlenecks.",
+      "Fixing application bugs before the final release.",
+      "Publishing application on App Store.",
+      "Maintaining the code and atomization of the application.",
+      "Designing and implementing application updates"
+    ],
+    "appstoreLink": "https://apps.apple.com/ca/app/taxi-cabonline/id495111856",
+    "googleplayLink": "https://play.google.com/store/apps/details?id=com.cabonline.cabonline&hl=en_CA&gl=US",
+    "design_scheme": {
+      "color": "images/color-palette/cabonline.png",
+      "font": "Tanseek Modern Arabic Medium"
+    },
+    "documentation":null
   }
 ]

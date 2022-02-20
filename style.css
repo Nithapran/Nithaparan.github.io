@@ -105,6 +105,7 @@
     width: 202px;
     height: 450px;
     margin: 14PX;
+    object-fit: cover;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
   }
@@ -156,7 +157,21 @@
     height: 450px;
   }
 
-  #design-scheme h1,ol {
+  #design-scheme h1 {
     color: rgb(255, 255, 255);
     padding: 14PX;
+  }
+
+  #design-scheme h3 {
+    color: rgb(255, 255, 255);
+    padding: 14PX;
+  }
+
+  #design-scheme #pallete-image {
+    width: 200px;
+    height: 100px;
+    margin: 14PX;
+    object-fit: cover;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
   }
