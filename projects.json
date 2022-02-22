@@ -2,7 +2,7 @@
   {
     "name": "CabOnline",
     "image": "images/detail-page-bg.jpg",
-    "description": "Cab online is a taxi booking platform",
+    "description": "This is a taxi system mainly operated in Sweden, Norway, and Finland. In Taxi Cabonline people can book a trip with some interesting features like adding car-options, pre-booking, add via-points, and more. Moreover, it has common features like rating and location tracking.",
     "screenShots": [
       "images/cabonline-sc/1.jpg",
       "images/cabonline-sc/2.jpeg",
@@ -14,7 +14,7 @@
       "images/cabonline-sc/8.jpeg"
     ],
     "role": "Developer",
-    "responsibilities":[
+    "responsibilities": [
       "Designing and building mobile applications for Apple’s iOS platform.",
       "Collaborating with the design team to define app features",
       "Ensuring quality and performance of the application to specifications.",
@@ -30,12 +30,12 @@
       "color": "images/color-palette/cabonline.png",
       "font": "Tanseek Modern Arabic Medium"
     },
-    "documentation":null
+    "documentation": null
   },
   {
     "name": "Fitopia",
     "image": "images/detail-page-bg.jpg",
-    "description": "Fitopia is a yoga class booking system",
+    "description": "This is a consumer facing iOS mobile application for a Health care business in London. The app facilitates the user to view and book the classes by date. Users can able to make the payments through the app. Additionally the app provides some facilities such as Google maps, push notifications etc.",
     "screenShots": [
       "images/fitopia-sc/1.jpeg",
       "images/fitopia-sc/2.jpeg",
@@ -44,7 +44,7 @@
       "images/fitopia-sc/5.jpeg"
     ],
     "role": "Developer",
-    "responsibilities":[
+    "responsibilities": [
       "Designing and building mobile applications for Apple’s iOS platform.",
       "Collaborating with the design team to define app features",
       "Ensuring quality and performance of the application to specifications.",
@@ -54,12 +54,12 @@
       "Maintaining the code and atomization of the application.",
       "Designing and implementing application updates"
     ],
-    "appstoreLink": "https://apps.apple.com/ca/app/taxi-cabonline/id495111856",
-    "googleplayLink": "https://play.google.com/store/apps/details?id=com.cabonline.cabonline&hl=en_CA&gl=US",
+    "appstoreLink": null,
+    "googleplayLink": null,
     "design_scheme": {
-      "color": "images/color-palette/cabonline.png",
+      "color": "images/color-palette/fitopia.png",
       "font": "Tanseek Modern Arabic Medium"
     },
-    "documentation":null
+    "documentation": null
   }
 ]

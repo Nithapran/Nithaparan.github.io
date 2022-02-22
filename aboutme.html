@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Personal Portfolio Website</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Audiowide"
@@ -45,10 +44,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html"
+          <a class="nav-item nav-link" href="index.html"
             >Home <span class="sr-only">(current)</span></a
           >
-          <a class="nav-item nav-link" href="aboutme.html">About me</a>
+          <a class="nav-item nav-link active" href="aboutme.html">About me</a>
           <!-- <a class="nav-item nav-link" href="#">Projects</a> -->
           <a class="nav-item nav-link" href="projects.html">Projects</a>
           <a class="nav-item nav-link" href="contactme.html">Contact me</a>
@@ -57,15 +56,79 @@
       </div>
     </nav>
     
-    <section id="home">
-      <div id="home-content">
-        <h4>Hello!</h4>
-        <h1>I am Nithaparan, </h1>
-        <h6>I am iOS Developer. </h6>
-        <button onclick="document.location='contactme.html'" type="button" class="btn btn-outline-danger">Contact me</button>
+    <section id="introduction" class="project-summary">
+      <div id="intro-content">
+        <h1>Introduction</h1>
+        <p>High quality energetic software engineer
+          with three years of experience in iOS
+          development, seeking for opportunities to
+          broaden my knowledge and skills to solve
+          practical global problems and enhances
+          lives better.</p>
       </div>
     </section>
+    <section id="work-history" style="display: flex;">
+      <h3>Work history</h3>
+      <div id= "work-edu-history-container">
+        <H5 id= "work-edu-history-job-title">Software Engineer - iOS</H5>
+        <div style="display: flex;">
+          <div id="work-edu-history-firm">Creative Software</div>
+          <div id="seperator">&nbsp|&nbsp</div>
+          <div id="period">March, 2020 - December, 2020</div>
+        </div>
+        
+        <div id="work-edu-history-job-summary">Worked on a project which is basically a taxi system called
+          'Cabonline'. Cabonline mainly operated in Sweden, Fin Land, and
+          Norway.</div>
+          <p> </p>
+          <H5 id= "work-edu-history-job-title">Software Engineer - iOS</H5>
+          <div style="display: flex;">
+            <div id="work-edu-history-firm">Incubate Labs</div>
+            <div id="seperator">&nbsp|&nbsp</div>
+            <div id="period">July, 2018 - Jan, 2020</div>
+          </div>
+          <div id="work-edu-history-job-summary">Worked on couple of projects which drive a rental business in the US.
+            First one is 'Cloud of Goods', a consumer mobile iOS application .
+            Second one is 'CloudMobile', a driver iOS mobile application .</div>
+            <p> </p>
+          <H5 id= "work-edu-history-job-title">Software Engineer - iOS</H5>
+          <div style="display: flex;">
+            <div id="work-edu-history-firm">Slice Pvt ltd</div>
+            <div id="seperator">&nbsp|&nbsp</div>
+            <div id="period">July, 2017 - July, 2018 (Part-time)</div>
+          </div>
+          <div id="work-edu-history-job-summary">Worked in a main project called 'Fitopia' and customized applications
+            from 'Fitopia'. These applications help to run Yoga class studios in
+            London, UK.</div>
+            <p> </p>
+          <H5 id= "work-edu-history-job-title">TRAINEE SOFTWARE ENGINEER - iOS</H5>
+          <div style="display: flex;">
+            <div id="work-edu-history-firm">Slice Pvt ltd</div>
+            <div id="seperator">&nbsp|&nbsp</div>
+            <div id="period">January, 2017 - June, 2017</div>
+          </div>
+          <div id="work-edu-history-job-summary">Worked in a main project called 'Fitopia' and customised applications
+            from 'Fitopia'. These applications help to run Yoga class studios in
+            london , Uk.</div>
+        </div>
+    </section>
     
+    <section id="education-history" style="display: flex;">
+      <h3>Education history</h3>
+      <div id= "work-edu-history-container">
+        
+        <div style="display: flex;">
+          <div id="period">GEORGIAN COLLEGE</div>&nbsp&nbsp
+          <!-- <div id="seperator">&nbsp|&nbsp</div> -->
+          <div id="period">Canada</div>
+        </div>
+        <div id="period">Graduate certificate in Mobile Application Development</div>
+        <div id="work-edu-history-job-summary">2021/2022(One Year)</div>
+          <p> </p>
+        
+        
+        </div>
+    </section>
     
     
     <footer class="bg-dark text-center">
@@ -127,8 +190,8 @@
       function setUpPage(project) {
         console.log(project);
         //setup summary section
-        var homeSection = document.getElementById("home");
-        homeSection.style.backgroundImage = `url(images/about-bg2.png)`;
+        var introductionSection = document.getElementById("introduction");
+        introductionSection.style.backgroundImage = `url(images/about-bg2.png)`;
       }
 
       setUpPage();
