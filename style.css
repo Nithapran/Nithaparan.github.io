@@ -235,13 +235,30 @@ p {
   width: 15%;
 }
 
+@media (max-width: 568px) {
+  
+
+  #work-history > h3 {
+    width: 100%;
+    align-items: center;
+  text-align: center;
+  }
+
+  #work-history  #work-edu-history-container {
+    width: 80%;
+    align-items: center;
+    margin-left: 10%; 
+    margin-right: 10%;
+  }
+}
+
 #work-edu-history-container {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
   background-color: #3f3f3f;
   border-radius: 15px;
-  width: 80%;
+  width: auto;
 }
 
 #work-edu-history-job-title {
