@@ -223,12 +223,12 @@ p {
 
 #work-history h3 {
   margin-left: 14px;
+  margin-right: 14px;
   color: rgb(255, 255, 255);
   width: 15%;
 }
 
 #work-edu-history-container {
-  float: right;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -283,11 +283,3 @@ p {
   object-fit: cover;
   background-repeat: no-repeat;
 }
-
-/* footer {
-  position:fixed;
-  bottom:0;
-  width:100%;
-  height:auto;   /* Height of the footer */
-  background:#6cf;
-} */
