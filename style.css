@@ -1,3 +1,10 @@
+/* Theme colors */
+:root {
+  --black: rgb(0, 0, 0);
+  --blue: rgb(103, 220, 255);
+  --red: rgb(255, 0, 0);
+}
+
 .footer {
   position: fixed;
   width: 100%;
@@ -213,7 +220,7 @@ p {
   width: 50%;
 }
 
-#intro-content {
+.center-vertically {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -242,8 +249,6 @@ p {
   margin-top: 20px;
   color: white;
 }
-
-
 
 #work-edu-history-job-summary {
   margin-left: 20px;
@@ -282,4 +287,114 @@ p {
   background-size: 100% auto;
   object-fit: cover;
   background-repeat: no-repeat;
+}
+
+#landing-header {
+  width: 100%;
+  height: auto;
+}
+
+#landing-header img {
+  height: 500px;
+  width: auto;
+}
+
+#landing-header #div2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 50%;
+}
+
+#landing-header h1 {
+  color: white;
+}
+
+#landing-header h1:nth-of-type(4) {
+  color: var(--red);
+}
+
+#landing-header-content #div1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 60px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+}
+
+#landing-header-content #div1 button {
+  background-color: rgb(255, 255, 255, 0);
+  border: 0ch;
+  height: max-content;
+}
+#landing-header-content #div1 img {
+  background-color: rgb(255, 250, 250, 0);
+  height: 250px;
+  width: 100%;
+}
+
+@media (max-width: 568px) {
+  #landing-header-content #div1 {
+    padding: 0px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+  }
+  #landing-header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#steps-section #steps-section-content {
+  color: white;
+  width: 100%;
+}
+
+#steps-section #steps-section-content  img {
+  height: 400px;
+  width: auto;
+}
+
+#steps-section #steps-section-content > div {
+  text-align: center;
+  margin: 5px;
+  background-color: rgb(130, 130, 130,0.5);
+  border-radius: 10px;
+  border-width: 0.5px;
+  border-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+#steps-section h4 {
+  color: rgb(255, 0, 0);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#feature-section{
+  color: white;
+  
+}
+
+@media (max-width: 568px) {
+  #steps-section #steps-section-content  div {
+    padding: 0px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+  }
+
+  #feature-section {
+    align-items: center;
+  text-align: center;
+  }
 }
