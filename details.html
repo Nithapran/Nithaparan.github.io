@@ -111,7 +111,7 @@
       </div>
       <div class="fonts">
         <h3>Fonts</h3>
-        <p>sdsd</p>
+        <p id="project-font">sdsd</p>
       </div>
     </section>
     
@@ -190,7 +190,8 @@
         var appstoreButton = document.getElementById("appstore-link");
         var googleplayButton = document.getElementById("googleplay-link");
         var palatteImage = document.getElementById("pallete-image");
-        projectSummarySection.style.backgroundImage = `url(${project.image})`;
+        var projectFont = document.getElementById("project-font");
+        projectSummarySection.style.backgroundImage = `url(images/detail-page-bg.jpg)`;
         projectSummarySection.style.position = "top left";
         projecTtitle.innerHTML = project.name;
         projectDescription.innerHTML = project.description;
@@ -227,8 +228,18 @@
           responsibilitiesList.appendChild(li);
         });
 
+        //setup doc section
+        var projectScreenshotSection = document.getElementById("documentation");
+        project.documentation.forEach((element) => {
+          var img = document.createElement("img");
+          img.src = element;
+          img.className = "screenshot";
+          projectScreenshotSection.appendChild(img);
+        });
+
         //setup design Scheme
         palatteImage.src = project.design_scheme.color;
+        projectFont.innerHTML = project.design_scheme.font;
       }
 
      
