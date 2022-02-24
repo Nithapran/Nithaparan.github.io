@@ -230,12 +230,20 @@
 
         //setup doc section
         var projectScreenshotSection = document.getElementById("documentation");
-        project.documentation.forEach((element) => {
+        if (project.documentation.length == 0) {
+          var label = document.createElement("h6");
+          label.style = "color:red; margin-left:14px";
+          label.innerHTML = "Not available";
+          projectScreenshotSection.appendChild(label);
+        } else {
+          project.documentation.forEach((element) => {
           var img = document.createElement("img");
           img.src = element;
           img.className = "screenshot";
           projectScreenshotSection.appendChild(img);
         });
+        }
+       
 
         //setup design Scheme
         palatteImage.src = project.design_scheme.color;

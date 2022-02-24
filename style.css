@@ -453,3 +453,19 @@ p {
   margin-top: 10px;
 }
 
+#contact-form-container{
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 568px) {
+  
+  #contact-form-container {
+    width: 100%;
+    align-items: center;
+  text-align: center;
+  }
+}
